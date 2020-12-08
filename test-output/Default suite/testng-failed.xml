@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.End2End.HomePageTest">
+      <class name="Framework.End2End.ValidateNumber">
         <methods>
-          <include name="baseNavigationPath"/>
+          <include name="validateNumber"/>
         </methods>
-      </class> <!-- Framework.End2End.HomePageTest -->
+      </class> <!-- Framework.End2End.ValidateNumber -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

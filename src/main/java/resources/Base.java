@@ -10,9 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Base {
 
 	protected WebDriver driver;
+	protected Properties properties;
 	
 	public WebDriver initializeDriver() throws Exception {
-		Properties properties = new Properties();
+		properties = new Properties();
 		
 		FileInputStream fileInputStream = new FileInputStream("/Users/temur/eclipse-workspace/End2End/src/main/java/resources/data.properties");
 		

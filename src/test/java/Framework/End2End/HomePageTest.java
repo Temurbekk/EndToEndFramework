@@ -1,16 +1,18 @@
 package Framework.End2End;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import resources.Base;
 
 public class HomePageTest extends Base{
-
+	public WebDriver driver;
 	@Test(dataProvider="getData")
 	public void baseNavigationPath(String username, String password, String allowed) throws Exception {
 		driver = initializeDriver();
-		driver.get("https://www.salesforce.com/");
+		driver.get(properties.getProperty("url"));
 		
 		HomePage homePage = new HomePage(driver);
 		
@@ -23,8 +25,11 @@ public class HomePageTest extends Base{
 		System.out.println(allowed);
 		loginPage.getLogin().click();
 		
+	}
+	
+	@AfterTest
+	public void close() {
 		driver.close();
-		
 	}
 	
 	@DataProvider
