@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-07T21:53:57 EST" name="Suite" finished-at="2020-12-07T21:54:06 EST" duration-ms="9290">
+    <groups>
+    </groups>
+    <test started-at="2020-12-07T21:53:57 EST" name="validateNumber" finished-at="2020-12-07T21:54:01 EST" duration-ms="4300">
+      <class name="Framework.End2End.ValidateNumber">
+        <test-method signature="validateNumber()[pri:0, instance:Framework.End2End.ValidateNumber@709ba3fb]" started-at="2020-12-07T21:53:57 EST" name="validateNumber" finished-at="2020-12-07T21:54:01 EST" duration-ms="4201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNumber -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Framework.End2End.ValidateNumber@709ba3fb]" started-at="2020-12-07T21:54:01 EST" name="close" finished-at="2020-12-07T21:54:01 EST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Framework.End2End.ValidateNumber -->
+    </test> <!-- validateNumber -->
+    <test started-at="2020-12-07T21:53:57 EST" name="validateLogo" finished-at="2020-12-07T21:54:01 EST" duration-ms="4315">
+      <class name="Framework.End2End.ValidateLogo">
+        <test-method signature="validateLogo()[pri:0, instance:Framework.End2End.ValidateLogo@c540f5a]" started-at="2020-12-07T21:53:57 EST" name="validateLogo" finished-at="2020-12-07T21:54:01 EST" duration-ms="4214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogo -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Framework.End2End.ValidateLogo@c540f5a]" started-at="2020-12-07T21:54:01 EST" name="close" finished-at="2020-12-07T21:54:01 EST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Framework.End2End.ValidateLogo -->
+    </test> <!-- validateLogo -->
+    <test started-at="2020-12-07T21:53:57 EST" name="loginFlow" finished-at="2020-12-07T21:54:06 EST" duration-ms="9290">
+      <class name="Framework.End2End.HomePageTest">
+        <test-method signature="baseNavigationPath(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Framework.End2End.HomePageTest@667a738]" started-at="2020-12-07T21:53:57 EST" name="baseNavigationPath" data-provider="getData" finished-at="2020-12-07T21:54:02 EST" duration-ms="5450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[My Username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[My Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseNavigationPath -->
+        <test-method signature="baseNavigationPath(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Framework.End2End.HomePageTest@667a738]" started-at="2020-12-07T21:54:02 EST" name="baseNavigationPath" data-provider="getData" finished-at="2020-12-07T21:54:06 EST" duration-ms="3812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[My Other Username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[My Other Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseNavigationPath -->
+      </class> <!-- Framework.End2End.HomePageTest -->
+    </test> <!-- loginFlow -->
+  </suite> <!-- Suite -->
+</testng-results>
