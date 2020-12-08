@@ -1,5 +1,7 @@
 package Framework.End2End;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -17,7 +19,7 @@ public class ValidateLogo extends Base{
 		
 		HomePage homePage = new HomePage(driver);
 		
-		Assert.assertTrue(homePage.getLogo().isDisplayed());
+		AssertJUnit.assertTrue(homePage.getLogo().isDisplayed());
 		
 	}
 	

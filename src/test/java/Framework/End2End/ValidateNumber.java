@@ -1,5 +1,7 @@
 package Framework.End2End;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +17,7 @@ public class ValidateNumber extends Base {
 		
 		HomePage homePage = new HomePage(driver);
 		
-		Assert.assertEquals("1-800-667-6389", homePage.getNumber().getText());
+		AssertJUnit.assertEquals("1-800-667-6389", homePage.getNumber().getText());
 	
 		
 	}

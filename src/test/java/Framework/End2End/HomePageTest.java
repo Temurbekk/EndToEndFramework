@@ -1,5 +1,6 @@
 package Framework.End2End;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
@@ -25,11 +26,8 @@ public class HomePageTest extends Base{
 		System.out.println(allowed);
 		loginPage.getLogin().click();
 		
-	}
-	
-	@AfterTest
-	public void close() {
 		driver.close();
+		
 	}
 	
 	@DataProvider
