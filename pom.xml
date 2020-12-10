@@ -18,7 +18,7 @@
 	        			<version>3.0.0-M5</version>
 	        			<configuration>
 	          			<suiteXmlFiles>
-	            			<suiteXmlFile>testng.xml</suiteXmlFile>
+	            			<suiteXmlFile>testCucumber.xml</suiteXmlFile>
 	          			</suiteXmlFiles>
 	        			</configuration>
       				</plugin>
@@ -42,6 +42,29 @@
     	<artifactId>testng</artifactId>
     	<version>7.3.0</version>
     	<scope>test</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>6.9.0</version>
+	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-testng</artifactId>
+	    <version>6.9.0</version>
+	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-junit</artifactId>
+	    <version>6.9.0</version>
+	    <scope>test</scope>
 	</dependency>
     
   </dependencies>
